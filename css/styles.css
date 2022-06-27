@@ -49,15 +49,24 @@ color: var(--title-text-color);
 .container{
     width: 1200px;
     margin: 0 auto;
+    padding: 0px 15px;
     /* border: solid 1px red; */
+}
+
+.nav-list .link.current{
+    color: var(--accent-text-color);
+}
+
+.img{
+    min-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* -------------------------------------------------------------------HEADER-------------------------------------------------------------------------------------*/
 
 .header{
-background-color: var(--header-background);
-padding-top: 24px;  
-padding-bottom: 25px;   
+background-color: var(--header-background);   
 border-bottom: 1px solid #ECECEC;
 }
 
@@ -68,6 +77,11 @@ border-bottom: 1px solid #ECECEC;
 
 .header-list{
     display: flex;
+}
+
+.header-item{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .nav-item:not(:last-child){
@@ -83,6 +97,8 @@ margin-right: 50px;
 }
 
 .header-logo{
+padding-top: 24px;
+padding-bottom: 25px;
 font-family: Raleway;
 font-size: 26px;
 line-height: 1.19;
@@ -96,7 +112,6 @@ margin-right: 93px;
  
 .header-link{
 font-weight: 500;
-
 line-height: 1.14;
 letter-spacing: 0.02em;
 }
@@ -139,6 +154,7 @@ margin-bottom: 30px;
 }
 
 .service-btn{
+font-family: inherit;
 min-width: 200px;
 margin: 0 auto;
 background-color: var(--primary-button-background-color);
@@ -168,7 +184,7 @@ background-color: var(--primary-button-background-hover-color);
     display: flex;
 }
 
-.our-pros-item{
+.our-pros-item:not(:last-child){
     margin-right: 30px;
 }
 
@@ -195,7 +211,6 @@ color: var(--title-text-color);
 
 .our-work-list{
     display: flex;
-    justify-content: center;
 }
 
 .our-work-item:not(:last-child){
@@ -208,10 +223,6 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 color: var(--title-text-color);
-}
-
-.our-work-img{
-    display: block;
 }
 
 /* -------------------------------------------------------------------OURTEAM-SEC-------------------------------------------------------------------------------------*/
@@ -262,10 +273,6 @@ font-size: 16px;
 line-height: 1.18;
 text-align: center;
 color: var(--primary-text-color);
-}
-
-.our-team_img{
-    display: block;
 }
 
 /* -------------------------------------------------------------------FOOTER-------------------------------------------------------------------------------------*/
@@ -333,7 +340,12 @@ color: rgba(255, 255, 255, 0.6);
     display: block;
     border-radius: 4px;
     padding: 6px 22px;
+}
 
+.all-filters-btn{
+    background-color: var(--primary-button-background-color);
+    color: var(--secondary-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-filter-btn:hover,
@@ -388,8 +400,5 @@ margin-bottom: 30px;
     padding: 20px 24px;
 }
 
-.portfolio-img{
-    display: block;
-}
 
 
